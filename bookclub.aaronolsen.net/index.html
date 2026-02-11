@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Club</title>
+<style>
+  body {
+    background-color: #0A0F14;
+    color: #00DCE1;
+    font-family: monospace;
+    margin: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  h1 {
+    font-size: clamp(28px, 6vw, 60px);
+    margin: 0;
+    text-align: center;
+  }
+  .boxes {
+    border: 2px solid #00DCE1;
+    padding: 20px;
+    width: 800px;
+    max-width: 100%;
+    background-color: #0A0F14;
+<!-- background-color: #0F151D; -->
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #00DCE1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  .books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+  .box b {
+    display: block;
+    border-bottom: 2px solid #00DCE1;
+    padding-bottom: 6px;
+    margin-bottom: 0px;
+  }
+  .box {
+    border: 2px solid #00DCE1;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #5DD1D4;
+  }
+  .box .invert {
+    background: #00DCE1 !important;
+    color: #0A0F14 !important;
+    padding: 2px 6px;
+    display: inline-block;
+    border-radius: 3px;
+  }
+  .box.inverted {
+    background-color: #00DCE1;
+    color: #0A0F14;
+  }
+  .box.inverted b {
+    color: inherit;
+    border-bottom: 2px solid #0A0F14;
+  }
+
+</style>
+</head>
+<body>
+<div class="boxes">
+<h1>Bookclub</h1>
+</div>
+  <div class="boxes">
+    <div class="header">
+      <span>Man Carrying Book</span>
+    </div>
+    <div class="grid">
+    </div>
+    <div class="books">
+      <div class="box inverted"><b>Dubliners<br>by James Joyce</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Hard Rain Falling<br>by Don Carpenter</b><br><span class="invert">Aaron</span><br>Benjamin</div>
+      <div class="box"><b>Sci-fi/Fantasy</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Latin American Literature</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Noir & Pulp</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Graphic Novels</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Postmodernism</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Jake's Wild Card</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Contemporary</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Horror/Thriller</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Nonfiction</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>the Count of Monte Cristo<br>by Alexandre Dumas</b><br>Aaron</div>
+      <div class="box"><b>the Brothers Karamazov<br>by Fyodor Dostoevsky</b><br>Benjamin</div>
+    </div>
+    <div class="footer">The work is mysterious and important. - Mark S.</div>
+  </div>
+  
+  <div class="boxes">
+    <div class="header">
+      <span>Book 'n Bike</span>
+    </div>
+    <div class="grid">
+    </div>
+    <div class="books">
+      <div class="box inverted"><b>the Tainted Cup<br>by Robert Jackson Bennett</b><br>Aaron<br>Benjamin</div>
+      <div class="box inverted"><b>the Goblin Emperor<br>by Katherine Addison</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Between two Fires<br>by Christopher Buehlman</b><br>Aaron<br>Benjamin</div>
+    </div>
+    <div class="footer">Try to enjoy each fact equally. - Ms. Casey</div>
+  </div>
+  
+  <div class="boxes">
+    <div class="header">
+      <span>the Book Collectors</span>
+    </div>
+    <div class="grid">
+    </div>
+    <div class="books">
+      <div class="box"><b>One Hundred Years of Solitude<br>by Gabriel Garcia Marquez</b><br>Aaron<br><span class="invert">Benjamin</span><br><span class="invert">Kaeley</span></div>
+      <div class="box"><b>the Great Gatsby<br>by F. Scott Fitzgerald</b><br><span class="invert">Aaron</span><br>Benjamin<br>Kaeley</div>
+    </div>
+    <div class="footer">Upon request, I can also perform a hug.  - Ms. Casey</div>
+  </div>
+  
+  <div class="boxes">
+    <div class="header">
+      <span>Read the World</span>
+      <span>Aaron 23 | Benjamin 31 | Total 197</span>
+    </div>
+    <div class="grid">
+    </div>
+    <div class="books">
+<div class="box inverted"><b>Afghanistan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Albania</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box"><b>Algeria</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Andorra</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Angola</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Antigua and Barbuda</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Argentina</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box"><b>Armenia</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>Australia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Austria</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Azerbaijan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Bahamas</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Bahrain</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Bangladesh</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box"><b>Barbados</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Belarus</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Belgium</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Belize</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Benin</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Bhutan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Bolivia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Bosnia and Herzegovina</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Botswana</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Brazil</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Brunei</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Bulgaria</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Burkina Faso</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Burundi</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Côte d'Ivoire</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Cabo Verde</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Cambodia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Cameroon</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>Canada</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Central African Republic</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Chad</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Chile</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>China</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Colombia</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box"><b>Comoros</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Congo (Congo-Brazzaville)</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Costa Rica</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Croatia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Cuba</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Cyprus</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Czechia (Czech Republic)</b><br><span class="invert">Aaron</span><br>Benjamin</div>
+<div class="box"><b>Democratic Republic of the Congo</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>Denmark</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Djibouti</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Dominica</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Dominican Republic</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Ecuador</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Egypt</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>El Salvador</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Equatorial Guinea</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Eritrea</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Estonia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Eswatini (formerly Swaziland)</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Ethiopia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Fiji</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Finland</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>France</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Gabon</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Gambia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Georgia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Germany</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box"><b>Ghana</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Greece</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Grenada</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Guatemala</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Guinea</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Guinea-Bissau</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Guyana</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Haiti</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Honduras</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Hungary</b><br><span class="invert">Aaron</span><br>Benjamin</div>
+<div class="box"><b>Iceland</b><br><span class="invert">Aaron</span><br>Benjamin</div>
+<div class="box"><b>India</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box"><b>Indonesia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Iran</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Iraq</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box inverted"><b>Ireland</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Israel</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box"><b>Italy</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Jamaica</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>Japan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Jordan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Kazakhstan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Kenya</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Kiribati</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Kuwait</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Kyrgyzstan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Laos</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Latvia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Lebanon</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Lesotho</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Liberia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Libya</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Liechtenstein</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Lithuania</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Luxembourg</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Madagascar</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Malawi</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Malaysia</b><br><span class="invert">Aaron</span><br>Benjamin</div>
+<div class="box"><b>Maldives</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Mali</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Malta</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Marshall Islands</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Mauritania</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Mauritius</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>Mexico</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Micronesia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Moldova</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Monaco</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Mongolia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Montenegro</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Morocco</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Mozambique</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Myanmar (formerly Burma)</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Namibia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Nauru</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Nepal</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Netherlands</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>New Zealand</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Nicaragua</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Niger</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Nigeria</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box"><b>North Korea</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>North Macedonia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Norway</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box"><b>Oman</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Pakistan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Palau</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Palestine State</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Panama</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Papua New Guinea</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Paraguay</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Peru</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Philippines</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>Poland</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Portugal</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Qatar</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>Romania</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Russia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Rwanda</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Saint Kitts and Nevis</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Saint Lucia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Saint Vincent and the Grenadines</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Samoa</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>San Marino</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Sao Tome and Principe</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Saudi Arabia</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>Scotland</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Senegal</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Serbia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Seychelles</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Sierra Leone</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>Singapore</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Slovakia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Slovenia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Solomon Islands</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Somalia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>South Africa</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>South Korea</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>South Sudan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Spain</b><br><span class="invert">Aaron</span><br>Benjamin</div>
+<div class="box"><b>Sri Lanka</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box"><b>Sudan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Suriname</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Sweden</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box"><b>Switzerland</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+<div class="box"><b>Syria</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Taiwan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Tajikistan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Tanzania</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Thailand</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Timor-Leste</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Togo</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Tonga</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Trinidad and Tobago</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Tunisia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Turkey</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Turkmenistan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Tuvalu</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Uganda</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Ukraine</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>United Arab Emirates</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>United Kingdom</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>United States of America</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Uruguay</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Uzbekistan</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Vanuatu</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Venezuela</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Vietnam</b><br>Aaron<br>Benjamin</div>
+<div class="box inverted"><b>Wales</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Yemen</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Zambia</b><br>Aaron<br>Benjamin</div>
+<div class="box"><b>Zimbabwe</b><br>Aaron<br>Benjamin</div>
+      
+    </div>
+    <div class="footer">The remembered man does not decay. - Kier Eagan</div>
+  </div>
+  
+</body>
+</html>
+
+
+
+

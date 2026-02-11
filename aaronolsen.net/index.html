@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aaron Olsen</title>
+ <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+
+  <style>
+    :root {
+      --bg: #0A0F14;
+      --fg: #00DCE1;
+      --glow: rgba(0, 220, 225, 0.3);
+      --muted: #8aa4ad;
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: "JetBrains Mono", monospace;
+      margin: 0;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--maxw);
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 6vw, 60px);
+      margin: 0;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0 0 8px 0;
+      font-size: clamp(18px, 3vw, 26px);
+      border-left: 4px solid var(--fg);
+      padding-left: 10px;
+      line-height: 1.2;
+    }
+    
+    a {
+      box-shadow: inset 0 -1px 0 rgba(0, 255, 255, 0.35);
+      transition: box-shadow 160ms ease, color 160ms ease;
+      color: #00DCE1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background: #00DCE1 !important;
+      color: #0A0F14 !important;
+      padding: 0px 1px;
+      display: inline-block;
+      border-radius: 3px;
+
+    }
+
+    a:visited {
+      color: #00DCE1;
+    }
+    .box b {
+      display: block;
+      border-bottom: 2px solid #00DCE1;
+      padding-bottom: 6px;
+      margin-bottom: 0px;
+  }
+
+    .box {
+      border: 2px solid var(--fg);
+      padding: 12px;
+      width: 100%;
+      text-align: left;
+      background-color: #0A0F14;
+      border-radius: 0px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 16px; gap: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+     <article class="box">
+          <h1 style="margin:0">Aaron Olsen</h1>
+     </article>
+    <section id="Information Technology">
+      <h2>Information Technology<br></h2>
+      <p><a href="https://linkedin.com/in/olsenaaronw" target="_blank">linkedin.com</a></p>
+      <div class="grid">
+        <article class="box">
+          <h3 style="margin:0"><b>Certifications</b></h3>
+          <p>
+           <a href="https://www.credly.com/badges/2eb84f3a-ef38-46ae-a0ea-87fd22940da0/public_url" target="_blank">CompTIA Network+</a>
+            <br><a href="https://www.credly.com/badges/3f7b7640-92f6-466e-a839-4f87e087a424" target="_blank">CompTIA A+</a>
+            <br><a href="https://www.credly.com/badges/815c0fba-0412-4c8a-94c5-e0fde301796b?source=linked_in_profile" target="_blank">Google IT Support</a></p>
+        </article>
+        <article class="box">
+          <h3 style="margin:0"><b>Skills</b></h3>
+          <p>AD, Okta, Jira, Confluence documentation, Zoom Room management, Windows, Mac, Mosyle/Jamf, ScreenConnect</p>
+        </article>
+        <article class="box">
+          <h3 style="margin:0"><b>Linux Configuration</b></h3>
+          <p>Set up Linux desktop (Ubuntu) on company systems for use by employees</p>
+        </article>
+        
+        <article class="box">
+          <h3 style="margin:0"><b>Self Hosting</b></h3>
+          <p>This website: Raspberry Pi, nginx, and Cloudflare</p>
+        </article>
+      </div>
+    </section>
+    
+<section id="Writing projects">
+      <h2>Writing Projects</h2>
+      <p><a href="https://aaron-olsen.itch.io" target="_blank">itch.io</a></p>
+      <div class="grid">
+        <article class="box">
+          <h3 style="margin:0"><b>DURF TTRPG</b></h3>
+          <p><a href="https://bennyclare.itch.io/serf" target="_blank">Serf: A Hireling Supplement</a>
+            <br><a href="https://aaron-olsen.itch.io/ghast" target="_blank">Ghast: A Death Supplement</a></p>
+        </article>
+        <article class="box">
+          <h3 style="margin:0"><b>Rules-lite game</b></h3>
+          <p><a href="https://bennyclare.itch.io/under-the-graveyard" target="_blank">Under the Graveyard</a>
+        </article>
+        <article class="box">
+          <h3 style="margin:0"><b>DnD 5e Supplement</b></h3>
+          <p><a href="https://aaron-olsen.itch.io/as-heard-by-the-town-cryer" target="_blank">As Heard by the Town Cryer</a></p>
+        </article>
+      </div>
+    </section>
+   
+
+<p><a href="https://bookclub.aaronolsen.net/" target="_blank">What I'm reading.</a></p>
+
+  </main>
+</body>
+</html>

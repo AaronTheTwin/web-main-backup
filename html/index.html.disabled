@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Club</title>
+<style>
+  body {
+    background-color: #0A0F14;
+    color: #00DCE1;
+    font-family: monospace;
+    margin: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    gap: 24px;                
+  }
+  .man.carrying.book {
+    border: 2px solid #00DCE1;
+    padding: 20px;
+    width: 800px;
+    max-width: 100%;
+    background-color: #0F151D;
+    box-shadow: 0 0 20px rgba(0,220,225,0.3);
+  }
+  .book.n.bike {
+    border: 2px solid #00DCE1;
+    padding: 20px;
+    width: 800px;
+    max-width: 100%;
+    background-color: #0F151D;
+    box-shadow: 0 0 20px rgba(0,220,225,0.3);
+  }
+  .the.book.collectors {
+    border: 2px solid #00DCE1;
+    padding: 20px;
+    width: 800px;
+    max-width: 100%;
+    background-color: #0F151D;
+    box-shadow: 0 0 20px rgba(0,220,225,0.3);
+  } 
+  .commonplace.philosophy {
+    border: 2px solid #00DCE1;
+    padding: 20px;
+    width: 800px;
+    max-width: 100%;
+    background-color: #0F151D;
+    box-shadow: 0 0 20px rgba(0,220,225,0.3);
+  }
+  .life.on.books {
+    border: 2px solid #00DCE1;
+    padding: 20px;
+    width: 800px;
+    max-width: 100%;
+    background-color: #0F151D;
+    box-shadow: 0 0 20px rgba(0,220,225,0.3);
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #00DCE1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: flex-start; /* keep natural order */
+  }
+  .box b {
+    display: block;
+    border-bottom: 2px solid #00DCE1;
+    padding-bottom: 6px;
+    margin-bottom: 0px;
+  }
+  .box {
+    border: 2px solid #00DCE1;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #5DD1D4;
+  }
+  .box .invert {
+    background: #00DCE1 !important;
+    color: #0A0F14 !important;
+    padding: 2px 6px;
+    display: inline-block;
+    border-radius: 3px;
+  }
+  .box.inverted {
+    background-color: #00DCE1;
+    color: #0A0F14; 
+  }
+  .box.inverted b {
+    color: inherit;
+    border-bottom: 2px solid #0A0F14;
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="man carrying book">
+    <div class="header">
+      <span>Man Carrying Book</span>
+    </div>
+    <div class="grid">
+    </div>
+    <div class="bottom">
+      <div class="box"><b>Dubliners<br>by James Joyce</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>American Mid-Century</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Noir & Pulp</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Graphic Novel</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Sci-fi/Fantasy</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Translated</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Postmodernism</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>2026 Novels</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Russian Lit</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Horror/Thriller</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Nonfiction</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>the Count of Monte Cristo<br>by Alexandre Dumas</b><br>Aaron</div>
+      <div class="box"><b>the Brothers Karamazov<br>by Fyodor Dostoevsky</b></br>Benjamin</div>
+    </div>
+    <div class="footer">The work is mysterious and important. - Mark S.</div>
+  </div>
+
+  <div class="book n bike">
+    <div class="header">
+      <span>Book 'n Bike</span>
+    </div>
+    <div class="grid">
+    </div>
+    <div class="bottom">
+      <div class="box inverted"><b>the Tainted Cup<br>by Robert Jackson Bennett</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>the Goblin Emperor<br>by Katherine Addison</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Between two Fires<br>by Christopher Buehlman</b><br>Aaron<br>Benjamin</div>
+
+    </div>
+    <div class="footer">Try to enjoy each fact equally. - Ms. Casey</div>
+  </div>
+  <div class="the book collectors">
+    <div class="header">
+      <span>the Book Collectors</span>
+    </div>
+    <div class="grid">
+    </div>
+    <div class="bottom">
+      <div class="box"><b>One Hundred Years of Solitude<br>by Gabriel Garcia Marquez</b><br>Aaron<br><span class="invert">Benjamin</span><br>Kaeley</div>
+      <div class="box"><b>the Great Gatsby<br>by F. Scott Fitzgerald</b><br>Aaron<br>Benjamin<br>Kaeley</div>
+    </div>
+    <div class="footer">Upon request, I can also perform a hug.  - Ms. Casey</div>
+  </div>
+<div class="commonplace philosophy">
+    <div class="header">
+      <span>Commonplace Philosophy</span>
+    </div>
+    <div class="grid">
+    </div>
+    <div class="bottom">
+      <div class="box"><b>Non-Things<br>by Byung-Chul Han</b><br><span class="invert">Aaron</span><br>Benjamin</div>
+      <div class="box"><b>the Circle<br>by Dave Eggers</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>You and Your Profile<br>by Hans-Georg Moeller</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>the Right to Oblivion<br>by Lowry Pressly</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Alone Together<br>by Sherry Turkley</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>the Ethics of Authenticity<br>by Charles Taylor</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Pattern Recognition<br>by William Gibson</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Technics & Civilization<br>by Lewis Mumford</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>What is Called Thinking<br>by Martin Heidegger</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Technopoly<br>by Neil Postman</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>Stop all the Clocks<br>by Noah Kumin</b><br>Aaron<br>Benjamin</div>
+      <div class="box"><b>the Life of the Mind: Part I<br>by Hannah Arendt</b><br>Aaron<br>Benjamin</div>
+    </div>
+    <div class="footer">The remembered man does not decay. - Kier Eagan</div>
+  </div>
+  
+  <div class="life on books">
+    <div class="header">
+      <span>Life on Books</span>
+    </div>
+    <div class="grid">
+    </div>
+    <div class="bottom">
+      <div class="box"><b>One Hundred Years of Solitude<br>by Gabriel Garcia Marquez</b><br>Aaron<br><span class="invert">Benjamin</span></div>
+      <div class="box"><b>the Sellout<br>by Paul Beatty</b><br>Aaron<br>Benjamin</div>
+    </div>
+    <div class="footer">I choose... defiant jazz. - Helly R.</div>
+  </div> 
+</body>
+</html>
+
