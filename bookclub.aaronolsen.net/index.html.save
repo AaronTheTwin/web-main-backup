@@ -148,7 +148,7 @@
   <div class="boxes">
     <div class="header">
       <span>Read the World</span>
-      <span>Aaron 24 | Benjamin 32 | Total 197</span>
+      <span>Aaron 23 | Benjamin 32 | Total 197</span>
     </div>
     <div class="grid">
     </div>
@@ -190,7 +190,7 @@
 <div class="box"><b>Chad</b><br>Aaron<br>Benjamin</div>
 <div class="box"><b>Chile</b><br>Aaron<br>Benjamin</div>
 <div class="box inverted"><b>China</b><br>Aaron<br>Benjamin</div>
-<div class="box inverted"><b>Colombia</b><br>Aaron<br>Benjami</div>
+<div class="box"><b>Colombia</b><br>Aaron<br><span class="invert">Benjamin</span></div>
 <div class="box"><b>Comoros</b><br>Aaron<br>Benjamin</div>
 <div class="box"><b>Congo (Congo-Brazzaville)</b><br>Aaron<br>Benjamin</div>
 <div class="box"><b>Costa Rica</b><br>Aaron<br>Benjamin</div>
